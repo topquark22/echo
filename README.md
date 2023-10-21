@@ -1,4 +1,6 @@
 # echo
 Serial comms between multiple Arduinos
 
-![breadboard](txrx.png)
+![breadboard reverse](txrx.png)
+
+![breadboard obverse](txrx_.jpg)
