@@ -65,8 +65,9 @@ void loop_slave() {
     char c = mySerial.read();
     Serial.print(c);
   }
+  // visual acknowledgment that data was received
   digitalWrite(PIN_LED, HIGH);
-  delay(200);
+  delay(20);
   digitalWrite(PIN_LED, LOW);
 }
 
