@@ -46,7 +46,7 @@ void setup() {
   pinMode(PIN_ID1, OUTPUT);
   pinMode(PIN_ID2, OUTPUT);
 
-  digitalWrite(PIN_ID2, (deviceId > 1) & 0x1);
+  digitalWrite(PIN_ID2, (deviceId >> 1) & 0x1);
   digitalWrite(PIN_ID1, deviceId & 0x1);
 }
 
