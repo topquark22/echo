@@ -20,6 +20,8 @@ int deviceId = 0;
 
 const int BAUD_RATE = 9600;
 
+// Lib sets RX pinMode(INPUT_PULLUP), so no need for external resistor.
+// https://github.com/PaulStoffregen/SoftwareSerial/blob/master/SoftwareSerial.cpp
 SoftwareSerial mySerial(PIN_SW_RX, PIN_SW_TX);
 
 void resetSlave() {
