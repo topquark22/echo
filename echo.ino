@@ -24,7 +24,8 @@ const int BAUD_RATE = 9600;
 // https://github.com/PaulStoffregen/SoftwareSerial/blob/master/SoftwareSerial.cpp
 SoftwareSerial mySerial(PIN_SW_RX, PIN_SW_TX);
 
-void resetSlave() {
+// Wire pin D2 on master to RST on all slaves.
+void resetSlaves() {
   digitalWrite(PIN_RESET, LOW);
   delay(10);
   digitalWrite(PIN_RESET, HIGH);
