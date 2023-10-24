@@ -15,7 +15,7 @@ const int PIN_SW_RX = 6;
 const int PIN_ID2 = A4; // to bin B of CD4052BE
 const int PIN_ID1 = A5; // to pin A of CD4052BE
 
-// 0-3
+// Which device for master to communicate with (0-3). Hardcoded for now
 int deviceId = 0;
 
 const int BAUD_RATE = 9600;
