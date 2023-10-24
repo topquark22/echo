@@ -8,8 +8,15 @@ int slaveMode;
 const int PIN_RESET = 2;
 const int PIN_LED = 3;
 
-const int PIN_SW_TX = 10;
-const int PIN_SW_RX = 11;
+const int PIN_SW_TX = 5;
+const int PIN_SW_RX = 6;
+
+// Multiplexer control
+const int PIN_ID2 = A4; // to bin B of CD4052BE
+const int PIN_ID1 = A5; // to pin A of CD4052BE
+
+// 0-3
+int deviceId = 0;
 
 const int BAUD_RATE = 9600;
 
@@ -32,6 +39,12 @@ void setup() {
   
   pinMode(PIN_RESET, OUTPUT);
   digitalWrite(PIN_RESET, HIGH);
+
+  pinMode(PIN_ID1, OUTPUT);
+  pinMode(PIN_ID2, OUTPUT);
+
+  digitalWrite(PIN_ID2, (deviceId > 1) & 0x1);
+  digitalWrite(PIN_ID1, deviceId & 0x1);
 }
 
 void loop() {
