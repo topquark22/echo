@@ -1,6 +1,6 @@
 # Serial comms between multiple Arduinos
 
-Master transmits "Hello World" to the selected slave using custom serial GPIO pins. This is then displayed on the (usual) serial monitor of the slave.
+Master transmits "Hello world" to the selected slave using custom serial GPIO pins. This is then displayed on the (usual) serial monitor of the slave.
 
 * Use `SoftwareSerial` library to designate secondary serial pins TX=5, RX=6
 * Use CD4052BE multiplexer to allow selection of up to 4 slave devices
