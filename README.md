@@ -18,3 +18,5 @@ The master and slaves need not run from the same sketch. Right now they do, mode
 # Test circuit
 
 ![breadboard](circuit.jpg)
+
+![breadboard](circuit_s0s1.jpg)
